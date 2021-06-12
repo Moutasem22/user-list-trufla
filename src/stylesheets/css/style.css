@@ -1,0 +1,163 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/************MEDIA QUERY ********************/
+.user__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background-color: #848383;
+}
+
+.user__wrapper > h1 {
+  color: #002140;
+}
+
+.user__wrapper .user__wrapper--items {
+  background-color: #fff;
+  width: 70%;
+  overflow-y: auto;
+  max-height: 80vh;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  padding: 15px 50px;
+  border: 4px solid transparent;
+  /* Handle */
+}
+
+@media only screen and (max-width: 767px) {
+  .user__wrapper .user__wrapper--items {
+    width: 100%;
+  }
+}
+
+.user__wrapper .user__wrapper--items::-webkit-scrollbar {
+  width: 9px;
+}
+
+.user__wrapper .user__wrapper--items::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+.user__wrapper .user__wrapper--items::-webkit-scrollbar-thumb {
+  background: #002140;
+  border-radius: 8px;
+}
+
+.user__wrapper .user__wrapper--items .user__card {
+  position: relative;
+}
+
+.user__wrapper .user__wrapper--items .user__card .user__index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  height: 35px;
+  border-radius: 15px 15px 0 0;
+  background: #002140;
+  color: #fff;
+  padding: 0 15px;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user__wrapper .user__wrapper--items .user__card .user__card--data {
+  -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.13);
+          box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.13);
+  position: relative;
+  margin-bottom: 28px;
+  background-color: #fff;
+  border-radius: 6px;
+  z-index: 2;
+}
+
+.user__wrapper .user__wrapper--items .user__card .user__card--data > h2 {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+}
+
+.user__wrapper .user__wrapper--items .user__card .user__card--data > h2 span {
+  cursor: pointer;
+}
+
+.user__wrapper .user__wrapper--items .user__card .user__card--info {
+  text-align: left;
+  padding: 0 15px 10px;
+}
+
+.user__wrapper .user__wrapper--items .user__card .user__card--info > span {
+  font-size: 14px;
+}
+
+.user__wrapper .user__wrapper--items .user__card .user__card--info > span span {
+  opacity: 0.6;
+}
+
+.user__wrapper .user__wrapper--items .user__card .user__card--info .user__info--interest p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.user__wrapper .user__wrapper--items .user__card .user__card--info .user__info--interest ul {
+  padding-left: 25px;
+}
+
+.user__wrapper .user__wrapper--items .user__card .user__card--info .user__info--interest ul li {
+  opacity: 0.6;
+  max-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 9px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid;
+}
+
+.user__wrapper .user__wrapper--items .user__card .user__card--info .user__info--interest ul li > span {
+  margin-left: 35px;
+}
+
+.user__wrapper .user__wrapper--items .user__card:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.user__wrapper .user__wrapper--items .user__card:hover .user__index {
+  background: #fff;
+  color: #002140;
+  border: 3px solid #002140;
+  border-bottom: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
